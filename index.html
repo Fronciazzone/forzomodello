@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Il Mio Modello 3D in Realtà Aumentata con Model Viewer</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <style>
+        /* Stile CSS per far sì che il viewer occupi tutta la pagina del browser */
+        model-viewer {
+            width: 100vw;   /* 100% della larghezza della finestra di visualizzazione */
+            height: 100vh;  /* 100% dell'altezza della finestra di visualizzazione */
+            --poster-color: #ffffff; /* Colore di sfondo prima che il modello si carichi (bianco) */
+            border: none; /* Rimuove qualsiasi bordo predefinito */
+        }
+        body {
+            margin: 0; /* Rimuove i margini predefiniti del corpo della pagina */
+            overflow: hidden; /* Nasconde le barre di scorrimento se il contenuto è più grande della finestra */
+        }
+    </style>
+</head>
+<body>
+    <model-viewer
+        src="modello.glb"  alt="Il tuo modello 3D in realtà aumentata"
+        ar
+        ar-modes="webxr quick-look"
+        camera-controls
+        touch-action="pan-y"
+        shadow-intensity="1"
+        poster="data:image/gif;base666/9j/4AAQSkZJRgAB...AADSg=="
+        ar-button ></model-viewer>
+</body>
+</html>
