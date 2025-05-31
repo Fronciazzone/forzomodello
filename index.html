@@ -18,9 +18,11 @@
         }
         /* STILE AGGIORNATO: Sposta il pulsante AR in basso a destra e lo alza un po' */
         model-viewer::part(ar-button) {
-            left: unset;  /* Annulla il posizionamento a sinistra */
-            right: 16px;  /* Mantiene il margine di 16px dal bordo destro */
-            bottom: 32px; /* LO ALZA DI 32px dal bordo inferiore (16px standard + 16px extra) */
+            left: unset;
+            right: 16px;
+            bottom: 32px;
+            visibility: visible !important; /* FORZA LA VISIBILITÀ */
+            opacity: 1 !important;         /* FORZA L'OPACITÀ */
         }
     </style>
 </head>
