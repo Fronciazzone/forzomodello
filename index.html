@@ -16,13 +16,14 @@
             margin: 0;
             overflow: hidden;
         }
-        /* STILE AGGIORNATO: Sposta il pulsante AR in basso a destra e lo alza un po' */
+        /* STILE AGGIORNATO: Sposta il pulsante AR in basso a destra e lo alza un po', FORZANDO TUTTE LE PROPRIETÀ DI VISIBILITÀ */
         model-viewer::part(ar-button) {
             left: unset;
             right: 16px;
             bottom: 32px;
             visibility: visible !important; /* FORZA LA VISIBILITÀ */
             opacity: 1 !important;         /* FORZA L'OPACITÀ */
+            display: flex !important;      /* **NUOVA RIGA FONDAMENTALE:** FORZA IL DISPLAY */
         }
     </style>
 </head>
